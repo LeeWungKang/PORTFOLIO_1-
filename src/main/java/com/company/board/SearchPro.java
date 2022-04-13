@@ -62,7 +62,9 @@ public class SearchPro extends HttpServlet {
 //재활용하기 위해 데이타받아놓고 잠시 닫아준다.
 //추가 sql 문 ( 검색한 결과만 내려주기 위해 )		
 		
-		String sql = "select count(*) from HomeBoard where "+select_type+" like '%'|| ? ||'%'";
+		
+	
+		String sql ="select count(*) from HomeBoard where "+select_type+" like '%'|| ? ||'%'";
 		pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, search_keyword);
 		
