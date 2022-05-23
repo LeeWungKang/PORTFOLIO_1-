@@ -137,7 +137,6 @@ function Login() {
 		document.login_form.method="post";
 		document.login_form.submit();
 		self.close();
-		
 	}
 }
 function Sign_Up() {  //회원가입 화면으로 이동 > 팝업창은 내린다.

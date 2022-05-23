@@ -285,6 +285,9 @@ select * from (select rownum as b_rnum, A.* from (select * from inquiry where b_
 select * from (select rownum rnum,A.* from
 (select * from inquiry order by b_writedate desc) A) where rnum between 10-9 and 9;
 
+
+
+
 ----------------------------------------------------------------------------------------------------
 --고객의소리 관리자 답변 테이블
 create table inquiryReply ( 
